@@ -1,0 +1,42 @@
+@import 'nullstyle.scss';
+
+.header__title {
+    color: red;
+}
+.header__menu a {
+    color: green;
+}
+.about__title {
+    color: rgb(204, 149, 47);
+}
+
+.about__item h4{
+    color: brown;
+}
+
+.about__item h3{
+    color: rgb(90, 77, 4);
+}
+
+.about__text .about__item h4 span {
+    color: rgb(162, 0, 255);
+}
+
+.link-top {
+    color: green;
+}
+
+.history__title.title {
+    color: rgb(41, 66, 206);
+}
+
+h3[class*="__subtitle"] {
+    color: rgb(172, 34, 103);
+}
+.history__text p{
+    color: gray;
+}
+
+.footer__link a{
+    color: blue;
+}
