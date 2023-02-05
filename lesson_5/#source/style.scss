@@ -1,0 +1,50 @@
+@import 'nullstyle.scss';
+.main {
+    min-width: 1440px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #6C757D;
+    line-height: 25px;
+    padding: 15px 100px;
+		&__title {
+            margin: 0px 212px 40px 212px;
+            max-width: 605px;
+		}
+
+        &__title h2{
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 40px;
+            color: #212529;
+        }
+
+		&__subtitle {
+            margin: 0px 212px 80px 212px;
+		}
+        &__subtitle p{
+            margin-bottom: 40px;
+		}
+
+		&__img img{
+            width: 100%;
+		}
+
+        &__img {
+            margin-bottom: 80px;
+		}
+
+        &__gallery img{
+            max-width: 100%;
+            width: 49%;
+        }
+        .img1{
+            margin-right: 20px;
+        }
+        .img2{
+            
+        }
+        &__gallery {
+            margin: 0px auto 80px auto;
+        }
+}
