@@ -8,8 +8,9 @@ body{
    line-height: 1.78; /* 25/14 */
 }
 
-.body__img img{
-   max-width: 100%;
+.body__img img {
+   width: 100%;
+   margin-bottom: 40px;
 }
 
 [class*="__container"] {
