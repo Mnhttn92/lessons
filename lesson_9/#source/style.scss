@@ -1,0 +1,119 @@
+@import '_nullstyle';
+
+.wrapper {
+   font-family: 'Inter', sans-serif;
+   
+}
+.container {
+   max-width: 1200px;
+   padding: 0px 15px;
+   margin: 0 auto;
+}
+
+[class*="__text"]{
+   margin-bottom: 30px;
+   border: 1px solid black;
+   border-radius: 10px;
+   padding: 15px;
+}
+[class*="__title"]{
+   font-size: 30px;
+   font-weight: 700;
+   margin-bottom: 20px;
+}
+[class*="__format"]{
+   font-size: 25px;
+   font-weight: 700;
+   margin-bottom: 20px;
+   text-decoration: underline;
+   color: #637381;
+}
+[class*="__role"]{
+   font-size: 20px;
+   font-weight: 700;
+}
+[class*="__box"]{
+   font-size: 25px;
+   margin-bottom: 20px;
+   font-weight: 700;
+   text-decoration: underline;
+   
+}
+[class*="__images"]{
+   margin-bottom: 30px;
+   font-size: 0;
+   img{
+      max-width: 100%;
+      margin-right: 10px;
+      display: inline-block;
+      min-height: 50px;
+      min-width: 50px;
+      text-align: center;
+      vertical-align: middle;
+   }
+}
+[class*="__images"] img:last-child{
+   margin: 0;
+}
+.box {
+
+		&__content {
+         padding: 30px 0px;
+		}
+
+		&__icon {
+         margin-bottom: 50px;
+         background-color: #b4a4a4;
+         padding: 50px;
+         border-radius: 10px;
+		}
+
+		&__design{
+         margin-bottom: 50px;
+         background-color: #858580;
+         padding: 50px;
+         border-radius: 10px;
+      }
+
+      &__cont-img{
+         background-color: #613380;
+         padding: 50px;
+         border-radius: 10px;
+         .portfolio__images{
+            img{
+               width: 32%;
+               margin-bottom: 10px;
+            }
+         }
+         .portfolio__images img:nth-child(4){
+            margin-bottom: 0;
+         }
+         .portfolio__images img:nth-child(5){
+            margin-bottom: 0;
+         }
+         .portfolio__images img:nth-child(6){
+            margin-bottom: 0;
+         }
+         .teams__images{
+            img{
+               width: 24%;
+            }
+         }
+         .blogs__images {
+            img {
+               width: 32%;
+            }
+         }
+      }
+      &__icon div:last-child{
+         margin-bottom: 0;
+      }
+      &__cont-img div:last-child{
+         margin-bottom: 0;
+      }
+      &__design div:last-child{
+         margin-bottom: 0;
+      }
+}
+
+
