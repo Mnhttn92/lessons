@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>Lesson 16</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<h1 class="header__title">Forms</h1>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main__container">
+				<div class="main__test">
+					<h2 class="main__title">Test</h2>
+					<form action="#" class="form" method="GET" enctype="multipart/form-data">
+						<div class="form__line form__line--name">
+							<label for="username"> Type your name </label>
+							<span class="form__req">*</span>
+							<input type="text" name="username" id="username" placeholder="Your name" required>
+						</div>
+						<div class="form__line form__line--pass">
+							<label for="userpass"> Type your password </label>
+							<span class="form__req">*</span>
+							<input type="password" name="userpass" id="userpass" placeholder="Your passworld" minlength="8"
+								required>
+						</div>
+						<div class="form__line form__line--phone">
+							<label for="userphone"> Type your phone number </label>
+							<input type="tel" name="userphone" id="userphone" placeholder="Your phonenumber">
+						</div>
+						<div class="form__line form__line--mail">
+							<label for="useremail"> Type your email </label>
+							<span class="form__req">*</span>
+							<input type="email" name="useremail" id="useremail" placeholder="Your email" required>
+						</div>
+						<div class="form__line form__line--birthday">
+							<label for="userbirthday"> Choose your birthday </label>
+							<span class="form__req">*</span>
+							<input type="date" name="userbirthday" id="userbirthday" required>
+						</div>
+						<div class="form__line form__line--color">
+							<label for="usercolor"> Choose your profile color </label>
+							<input type="color" name="usercolor" id="usercolor">
+						</div>
+						<div class="form__line form__line--licence">
+							<h4 class="form__line-title">Do you have a driving licence?</h4>
+							<label for="licence-yes">Yes</label>
+							<input type="radio" name="licence" value="yes" id="licence-yes">
+							<label for="licence-no">No</label>
+							<input type="radio" name="licence" value="No" id="licence-no">
+						</div>
+						<div class="form__line form__line--nofcars">
+							<label for="number-of-cars">How many cars do you have ?</label>
+							<select name="number-of-cars" id="number-of-cars">
+								<option value="0">None</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="More than 2">More than 2</option>
+							</select>
+						</div>
+						<div class="form__line form__line--cars">
+							<h4 class="form__line-title">What is your favorite cars ? (Choose one or more)</h4>
+							<label for="bmw">BMW</label>
+							<input type="checkbox" name="BMW" value="BMW" id="bmw">
+							<label for="audi">Audi</label>
+							<input type="checkbox" name="Audi" value="Audi" id="audi">
+							<label for="mercedes">Mercedes</label>
+							<input type="checkbox" name="Mercedes" value="Mercedes" id="mercedes">
+							<label for="toyota">Toyota</label>
+							<input type="checkbox" name="Toyota" value="Toyota" id="toyota">
+							<label for="other-cars">Other-cars</label>
+							<input type="checkbox" name="Other-cars" value="Other-cars" id="other-cars">
+						</div>
+						<div class="form__btns">
+							<button type="reset">Reset All</button>
+							<button type="submit">Submit</button>
+						</div>
+					</form>
+				</div>
+				<div class="main__billing billing">
+					<h2 class="billing__title">Billing Details</h2>
+					<form action="#" class="billing__form" enctype="multipart/form-data">
+						<div class="billing__box">
+							<div class="billing__fname billing-item">
+								<input type="text" name="first-name" required placeholder="First name *">
+							</div>
+							<div class="billing__lname billing-item">
+								<input type="text" name="last-name" required placeholder="Last name *">
+							</div>
+							<div class="billing__address-m billing-item">
+								<input type="text" name="address-main" required placeholder="Address *">
+							</div>
+							<div class="billing__address-a billing-item">
+								<input type="text" name="address-add" placeholder="Address line 2">
+							</div>
+							<div class="billing__country billing-item">
+								<select name="country" required>
+									<option value="">Country*</option>
+									<option value="country1">Country 1</option>
+									<option value="country2">Country 2</option>
+									<option value="country3">Country 3</option>
+									<option value="country4">Country 4</option>
+									<option value="country5">Country 5</option>
+									<option value="country6">Country 6</option>
+									<option value="country7">Country 7</option>
+									<option value="country8">Country 8</option>
+									<option value="country9">Country 9</option>
+								</select>
+							</div>
+							<div class="billing__city billing-item">
+								<input type="text" name="city" required placeholder="City/Town*">
+							</div>
+							<div class="billing__post1 billing-item">
+								<input type="text" name="postcode1" required placeholder="Postcode /ZIP*">
+							</div>
+							<div class="billing__phon1 billing-item">
+								<input type="tel" name="tel1" required placeholder="Phone*">
+							</div>
+							<div class="billing__post2 billing-item">
+								<input type="text" name="postcode2" required placeholder="Postcode /ZIP*">
+							</div>
+							<div class="billing__phone2 billing-item">
+								<input type="tel" name="tel2" required placeholder="Phone*">
+							</div>
+							<div class="billing__info billing-item">
+								<textarea name="additional-info" placeholder="Additional information"></textarea>
+							</div>
+						</div>
+						<div class="billing__check--acc">
+							<input type="checkbox" name="create-acc" value="yes" id="acc" checked>
+							<label for="acc"> Create Account</label>
+						</div>
+						<div class="billing__check--ship">
+							<input type="checkbox" name="different-addres" value="yes" id="dif-addr">
+							<label for="dif-addr"> Ship to a different address ?</label>
+						</div>
+						<div class="billing__coup-box coup-box">
+							<div class="coup-box__title">Apply Coupon to get discount!</div>
+							<input type="text" name="coupone-code" placeholder="Coupon code">
+							<button type="button">Apply Code</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="main__big-container">
+				<div class="main__shipping shipping">
+					<div class="shipping__row">
+						<div class="shipping__form form-shipping">
+							<h3 class="form-shipping__title title">Shipping Address</h3>
+							<form action="#" class="form-shipping__box shipp-box" enctype="multipart/form-data" method="get">
+								<div class="shipp-box__email shipp-box__item">
+									<label for="shipp-email" class="form-label form-label--req">Email Address</label>
+
+									<input name="email" type="email" id="shipp-email" required>
+								</div>
+								<div class="shipp-box__pass shipp-box__item">
+									<label for="shipp-pass" class="form-label">Password</label>
+									<input name="password" type="password" id="shipp-pass">
+								</div>
+								<div class="shipp-box__zip shipp-box__item">
+									<label for="shipp-zip" class="form-label">Zip/Postal Code</label>
+									<input name="zip-code" type="text" id="shipp-zip">
+								</div>
+								<div class="shipp-box__subtitle">You already have an account with us. Sign in or continue as
+									guest.</div>
+								<button type="submit" class="shipp-box__btn btn-sub">login</button>
+								<a href="#" class="shipp-box__forgot">Forgot Your Password?</a>
+							</form>
+							<form action="#" enctype="multipart/form-data" method="get"
+								class="form-shipping__acc shipping-acc">
+								<div class="shipping-acc__box ">
+									<div class="shipping-acc__fname shipp-box__item">
+										<label for="acc-fname" class="form-label form-label--req">First name</label>
+
+										<input type="text" name="first-name" id="acc-fname" required>
+									</div>
+									<div class="shipping-acc__lname shipp-box__item">
+										<label for="acc-lname" class="form-label form-label--req">Last name</label>
+
+										<input type="text" name="last-name" id="acc-lname" required>
+									</div>
+									<div class="shipping-acc__company shipp-box__item">
+										<label for="acc-comp" class="form-label">Company</label>
+										<input type="text" name="company" id="acc-comp">
+									</div>
+									<div class="shipping-acc__address shipp-box__item">
+										<label for="acc-address" class="form-label form-label--req">Street Address</label>
+
+										<input type="text" name="address1" id="acc-address" required>
+										<input type="text" name="address2">
+										<input type="text" name="address3">
+									</div>
+									<div class="shipping-acc__country shipp-box__item">
+										<label for="acc-country" class="form-label form-label--req">Country</label>
+
+										<input type="text" name="country" id="acc-country" required>
+									</div>
+									<div class="shipping-acc__state shipp-box__item">
+										<label for="acc-state" class="form-label form-label--req">State/ Province</label>
+
+										<select name="state" id="acc-state" required>
+											<option value="">Please select a region, state or province</option>
+											<option value="1">State 1</option>
+											<option value="2">State 2</option>
+											<option value="3">State 3</option>
+											<option value="4">State 4</option>
+											<option value="5">State 5</option>
+											<option value="6">State 6</option>
+											<option value="7">State 7</option>
+											<option value="8">State 8</option>
+											<option value="9">State 9</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-shipping__methods methods">
+									<h3 class="methods__title title">Shipping Methods</h3>
+									<div class="methods__radio radio-method">
+										<div class="radio-method__box">
+											<input type="radio" name="price" value="5" id="method1" checked>
+											<label for="method1">$5.00</label>
+											<span>Fixed</span>
+											<span>Flat Rate</span>
+										</div>
+										<div class="radio-method__box">
+											<input type="radio" name="price" value="10" id="method2">
+											<label for="method2">$10.00</label>
+											<span>Table Rate</span>
+											<span>Best Way</span>
+										</div>
+									</div>
+								</div>
+								<div class="form-shipping__btns">
+									<button class="form-shipping__btn btn-sub" type="submit">Next</button>
+									<button class="form-shipping__btn btn-res" type="reset">Back</button>
+								</div>
+
+							</form>
+						</div>
+						<div class="shipping__order">
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
