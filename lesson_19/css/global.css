@@ -1,0 +1,9 @@
+.grid-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.grid-box__item {
+  display: grid;
+}
